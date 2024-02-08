@@ -1,0 +1,24 @@
+<div class="text-center" >
+
+  <h1>Login Page</h1>
+ 
+  <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+   
+    <p>
+      <label for="username">First Name </label>
+      <input type="text" id="username" name="username" formControlName="username">
+    </p>
+   
+    <p>
+      <label for="password">Last Name </label>
+      <input type="password" id="password" name="password" formControlName="password">
+    </p>
+   
+    <p>
+      <button class="btn btn-primary" type="submit" [disabled]="contactForm.valid">Submit</button>
+    </p>
+   
+  </form>
+   
+  </div>
+   
