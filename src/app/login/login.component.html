@@ -5,17 +5,17 @@
   <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()">
    
     <p>
-      <label for="username">First Name </label>
+      <label for="username">Username</label>
       <input type="text" id="username" name="username" formControlName="username">
     </p>
    
     <p>
-      <label for="password">Last Name </label>
+      <label for="password">Password</label>
       <input type="password" id="password" name="password" formControlName="password">
     </p>
    
     <p>
-      <button class="btn btn-primary" type="submit" [disabled]="contactForm.valid">Submit</button>
+      <button class="btn btn-dark" type="submit" [disabled]="contactForm.valid">Login</button>
     </p>
    
   </form>
